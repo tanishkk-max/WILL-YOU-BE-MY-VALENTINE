@@ -1,61 +1,39 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* style.css */
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: whitesmoke;
+    font-family: Arial, sans-serif; /* Fallback font family */
+    text-align: center; /* Center-align text */
+    margin: 0; /* Remove default margin */
+    background-color: #FADADD; /* Set background color to light pink */
 }
 
-.wrapper {
-    position: relative;
-    width: 100%;
-    max-width: 400px;
-    text-align: center;
+#container {
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center-align items horizontally */
+    justify-content: center; /* Center-align items vertically */
+    height: 100vh; /* Make the container full viewport height */
 }
 
-h2 {
-    font-size: 2em;
-    color: #e94d58;
-    margin: 15px 0;
+#image-container {
+    /* This container will hold the images */
 }
 
-.gif {
-    width: 100%;
-    max-width: 300px;
+#question {
+    font-family: 'Sacramento', cursive; /* Apply Sacramento font to the question */
+    font-size: 52px; /* Set font size for the question */
 }
 
-.btn-group {
-    margin-top: 50px;
-    position: relative;
-    height: 40px;
+#options {
+    margin-top: 20px; /* Add space above the options */
 }
 
 button {
-    width: 150px;
-    height: inherit;
-    color: white;
-    font-size: 1.2em;
-    border-radius: 30px;
-    outline: none;
-    cursor: pointer;
-    box-shadow: 0 2px 4px gray;
-    border: 2px solid #e94d58;
-}
-
-button.yes-btn {
-    background: #e94d58;
-}
-
-button.no-btn {
-    background: white;
-    color: #e94d58;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
+    padding: 10px 20px; /* Set padding for buttons */
+    margin: 0 10px; /* Set margin around buttons */
+    font-size: 26px; /* Set font size for buttons */
+    font-family: 'Sacramento', cursive; /* Apply Sacramento font to the options */
+    background-color: #FB607F; /* Set button background color */
+    color: white; /* Set text color to white */
+    border: none; /* Remove button border */
+    cursor: pointer; /* Set cursor to pointer on hover */
