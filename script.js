@@ -10,8 +10,8 @@ function selectOption(option) {
             displayCatHeart(); // Display the cat-heart.gif
         });
     } else if (option === 'no') {
-        // Change text on the "No" button to "pakka ishuu?"
-        document.getElementById('no-button').innerText = 'pakka ishuu?'; 
+        // Change text on the "No" button to "hehe you have no choice ishuu!"
+        document.getElementById('no-button').innerText = 'hehe you have no choice ishuu!'; 
         // Increase font size of "Yes" button
         var yesButton = document.getElementById('yes-button');
         var currentFontSize = window.getComputedStyle(yesButton).getPropertyValue('font-size');
